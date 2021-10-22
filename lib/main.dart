@@ -1,4 +1,4 @@
-import 'package:belajar_flutter_login_page/home_page.dart';
+import 'package:belajar_flutter_login_page/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,6 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return HomePage();
+    return LoginPage();
   }
 }
