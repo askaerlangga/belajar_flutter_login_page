@@ -5,10 +5,11 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(title: Text('Home Page'), centerTitle: true,),
-      ),
+        body: Center(
+          child: ElevatedButton(onPressed: (){}, child: Text('Hello'),),
+        ),
     );
   }
 }

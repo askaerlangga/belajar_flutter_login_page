@@ -1,3 +1,4 @@
+import 'package:belajar_flutter_login_page/home_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -5,8 +6,7 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           title: Text('Login Page'),
           centerTitle: true,
@@ -54,7 +54,11 @@ class LoginPage extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)
                       ),
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+                          return HomePage();
+                        }));
+                      },
                       child: Text('Login', style: TextStyle(color: Colors.white),),
                       color: Colors.blue,
                     ),
@@ -64,7 +68,6 @@ class LoginPage extends StatelessWidget {
             ),
           ),
         ),
-      ),
     );
   }
 }
