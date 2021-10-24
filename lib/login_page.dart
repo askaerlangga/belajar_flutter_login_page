@@ -35,6 +35,7 @@ class LoginPage extends StatelessWidget {
                   height: 50,
                   margin: EdgeInsets.only(top: 5,bottom: 5),
                   child: TextField(
+                    obscureText: true,
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.lock),
                       hintText: 'Password',
